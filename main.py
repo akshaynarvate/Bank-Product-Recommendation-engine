@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # data importing
-data = pd.read_xls('Product recommendation.xls')
+data = pd.read_excel('Product recommendation.xls')
 df = pd.DataFrame(data=data)
 df.drop(columns=['Unnamed: 0'], inplace=True)
 array_df = pd.crosstab(df['Product'], df['EMAIL'])
