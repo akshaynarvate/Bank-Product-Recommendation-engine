@@ -2,4 +2,5 @@ pandas
 numpy
 sklearn
 scipy
+openpyxl
 streamlit
