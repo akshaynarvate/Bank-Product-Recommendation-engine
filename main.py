@@ -44,8 +44,12 @@ def main():
             st.write(f"Welcome back! {user[:9].upper()}")
             index = data[data["email"]==user].index.values
             # print(index)
-            distances, indices = model_knn.kneighbors(df.iloc[index,:].values.reshape(1,-1), n_neighbors=6)
-            product, rec = recom_system(distances, indices, index)
+            try:
+                distances, indices = model_knn.kneighbors(df.iloc[index,:].values.reshape(1,-1), n_neighbors=6)
+                product, rec = recom_system(distances, indices, index)
+            except:
+                st.error("Customer not found!")
+            
             st.write(f"your current product : ' __{product}__ '")
             st.write("#### Products you may like ")
             col1, col2, col3, col4, col5  = st.columns(5)
