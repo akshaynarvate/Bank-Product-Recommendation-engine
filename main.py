@@ -45,8 +45,8 @@ def main():
             index = data[data["email"]==user].index.values
             # print(index)
             if:
-                distances, indices = model_knn.kneighbors(df.iloc[index,:].values.reshape(1,-1), n_neighbors=6)
-                product, rec = recom_system(distances, indices, index)
+               distances, indices = model_knn.kneighbors(df.iloc[index,:].values.reshape(1,-1), n_neighbors=6)
+               product, rec = recom_system(distances, indices, index)
             else:
                 st.error("Customer not found!")
                 break
