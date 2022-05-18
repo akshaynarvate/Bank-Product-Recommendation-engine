@@ -48,7 +48,7 @@ def main():
                distances, indices = model_knn.kneighbors(df.iloc[index,:].values.reshape(1,-1), n_neighbors=6)
                product, rec = recom_system(distances, indices, index)
             except:
-                st.error("Customer not found!")
+                st.error("Can't Recommend Products!")
                 
             
             st.write(f"your current product : ' __{product}__ '")
