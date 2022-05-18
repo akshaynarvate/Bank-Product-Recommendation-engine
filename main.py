@@ -49,7 +49,7 @@ def main():
                product, rec = recom_system(distances, indices, index)
             except:
                 st.error("Customer not found!")
-                break
+                
             
             st.write(f"your current product : ' __{product}__ '")
             st.write("#### Products you may like ")
