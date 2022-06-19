@@ -2,7 +2,7 @@
 
 ### - Recommend products which interests the customers which are Inactive and likely to churn.
 
-### Recommending the Products with help of Cosine Similarity by finding patterns from the ratings (Collaborative Filtering Recommendation Engine (User based) - Unsupervised learning)
+### Recommending Products with help of Cosine Similarity by finding patterns from the ratings (Collaborative Filtering Recommendation Engine (User based) - Unsupervised learning)
 
 # Demo
 
